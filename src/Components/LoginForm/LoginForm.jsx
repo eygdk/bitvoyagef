@@ -1,6 +1,9 @@
 import React from 'react'
 import './LoginForm.css';
-import { FaUser, FaLock } from "react-icons/fa";
+import { FaUser, FaLock} from "react-icons/fa";
+import { SiKakao } from "react-icons/si";
+import { RiKakaoTalkFill } from "react-icons/ri";
+
 
 const LoginForm = () => {
     return (
@@ -14,6 +17,10 @@ const LoginForm = () => {
                 <div className="input-box">
                     <input type="password" placeholder='비밀번호' required />
                     <FaLock className='icon' />
+                </div>
+                <div className="kakao-login">
+                    <SiKakao className='icon' />
+                    <RiKakaoTalkFill className='icon talk-icon' />
                 </div>
                     <div className="remember-forgot">
                         <label><input type="checkbox" />기억하기</label>
