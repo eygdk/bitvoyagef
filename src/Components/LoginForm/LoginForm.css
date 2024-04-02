@@ -93,27 +93,33 @@
 
 
 /* 로그인 연동 로고 */
-.wrapper .kakao-login {
+.wrapper .oauth-login {
     position: relative;
-    margin-bottom: 10px; /* 기억하기와 로그인 버튼 사이의 여백 조정 */
+    margin-bottom: 20px; /* 기억하기와 로그인 버튼 사이의 여백 조정 */
     text-align: center;
 }
 
-.kakao-login .icon {
-    font-size: 50px;
-    color: #fae300;
-
+.oauth-login a { /* <a> 태그에 스타일을 적용합니다 */
+    display: inline-block; /* 인라인 블록 요소로 변경 */
+    margin: 0 10px; /* 좌우 마진을 통해 이미지 사이의 간격을 조정 */
+    cursor: pointer; /* 클릭 가능한 링크임을 시각적으로 나타냄 */
 }
 
-
-.naver-icon {
-    margin-bottom: 15px;
-    font-size: 20px;
-    color: #00C73C;
+.oauth-login .icon {
+    width: 45px; 
+    height: auto;
+    /* object-fit: cover; */ /* 가로세로 비율을 유지한 채로 사이즈가 조절되며, 비율이 맞지 않더라도 이미지를 확대해 컨테이너를 완전히 채움 */
+    background: transparent; /* 배경색을 투명하게 변경 */
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 8px; /* 모서리를 약간 둥글게 */
+    padding: 1px; /* 아이콘 주위에 약간의 공간을 추가 */
+    margin: 0 10px; /* 이미지 간격 조정 */
+    display: inline-block; /* 각 요소를 인라인 블록 요소로 설정 */
+    cursor: pointer; /* 클릭 가능한 요소임을 나타냄 */
+    transition: box-shadow 0.2s ease; /* 그림자 효과에 애니메이션 효과 추가 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* 그림자 효과 추가 */
 }
 
-.google-icon {
-    margin-bottom: 15px;
-    font-size: 22px;
-    color: #4285f4;
+.oauth-login .icon:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 2); /* 마우스를 올렸을 때 그림자를 더 크게 */
 }
