@@ -92,18 +92,28 @@
 }
 
 
-/* 아이콘 크기 조정을 위한 새로운 CSS 클래스 */
+/* 로그인 연동 로고 */
 .wrapper .kakao-login {
     position: relative;
     margin-bottom: 10px; /* 기억하기와 로그인 버튼 사이의 여백 조정 */
-    text-align: center; /* 아이콘을 가운데 정렬 */
+    text-align: center;
 }
 
 .kakao-login .icon {
-    font-size: 50px; /* 아이콘 크기 증가 */
-    color: #ff0; /* 아이콘 색상 설정 */
-    /* 아이콘 위치 조정이 필요한 경우 여기에 추가 */
+    font-size: 50px;
+    color: #fae300;
+
 }
 
-/* 아래는 기존의 .icon 클래스를 오버라이드할 수 있는 추가 스타일이 있을 경우 작성 */
 
+.naver-icon {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #00C73C;
+}
+
+.google-icon {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #4285f4;
+}

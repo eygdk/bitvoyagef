@@ -1,7 +1,7 @@
 import React from 'react'
 import './LoginForm.css';
-import { FaUser, FaLock} from "react-icons/fa";
-import { SiKakao } from "react-icons/si";
+import { FaUser, FaLock, FaGoogle } from "react-icons/fa";
+import { SiKakao, SiNaver } from "react-icons/si";
 import { RiKakaoTalkFill } from "react-icons/ri";
 
 
@@ -20,7 +20,9 @@ const LoginForm = () => {
                 </div>
                 <div className="kakao-login">
                     <SiKakao className='icon' />
-                    <RiKakaoTalkFill className='icon talk-icon' />
+                    <RiKakaoTalkFill className='icon' />
+                    <SiNaver className='naver-icon' />
+                    <FaGoogle className='google-icon'/>
                 </div>
                     <div className="remember-forgot">
                         <label><input type="checkbox" />기억하기</label>
